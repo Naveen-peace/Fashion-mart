@@ -1,0 +1,123 @@
+/* tostify */
+.toastify-center{
+    position: absolute;
+    top: 85%; 
+    right: 48px; 
+    border: transparent;
+    border-radius: 50%;
+    background-color: transparent;
+}
+.toastify-center:focus, button:focus-visible {
+    outline:none;
+}
+.toast-content{
+    width: 100%;
+}
+.toast-content p{
+    margin: 0 0 10px 0;
+}
+.toast-content h4{
+    margin: 0 0 10px 0;
+}
+/* tostify */
+
+/* popup1 */
+.box {
+    /* width: 100%;
+    height: 906px;
+    background: rgba(0, 0, 0, 0.23999999463558197); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-button {
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 3px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.603);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-box {
+    position: relative;
+    background: white;
+    border-radius: 4px;
+    width: 500px;
+    height: 220px;
+}
+
+.content h1 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 40px;
+    text-align: left;
+    margin: 35px 102px 10px 27px;
+}
+
+.content p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.1px;
+    text-align: left;
+    margin: 0 83px 45px 27px;
+}
+
+.close-button {
+    position: absolute;
+    top: 24px;
+    right: 19px;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.popup-btn-one {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    width: 55px;
+    height: 20px;
+    background: none;
+    border: transparent;
+}
+
+.popup-btn-two {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 4px;
+    border-color: transparent;
+    width: 100px;
+    height: 44px;
+    padding: 0;
+}
+
+.popup-btn-select {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    margin: 0 24px 24px 286px;
+}
+
+/* popup1 */

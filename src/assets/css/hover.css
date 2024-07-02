@@ -1,0 +1,212 @@
+.features-about-btn {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #3734a9;
+    margin-top: 50px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 1px solid #3734a9;
+    border-radius: 10px;
+    background-color: transparent;
+    position: relative;
+    display: inline-block;
+    padding: 10px 30px;
+    z-index: 1;
+    overflow: hidden;
+    transition: color 1s, box-shadow 1s;
+}
+.features-about-btn:hover {
+    color: #fff;
+}
+
+.features-about-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #3734a9;
+    transform: skewX(35deg);
+    z-index: -1;
+    transition: width 1s;
+    border-radius: 10px; /* Matching the button's border-radius */
+}
+
+.features-about-btn:hover::before {
+    width: 100%;
+}
+
+.features-about-btn:hover::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #3734a9;
+    box-shadow: 0 0 20px #3734a9,
+                0 0 40px #3734a9,
+                0 0 80px #3734a9,
+                0 0 160px #3734a9;
+    border-radius: 10px;
+    z-index: -2;
+    transition: box-shadow 1s;
+}
+
+/* Adding glow effect */
+.features-about-btn.glow-on-hover::before {
+    content: '';
+    background: linear-gradient(45deg, #7220dd, #3734a9, #3e38e0, #322dc9, #9538ff, #3737c4, #9e48ff, #4040b6);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.features-about-btn:active {
+    color: #000;
+}
+
+.features-about-btn:active:after {
+    background: transparent;
+}
+
+.features-about-btn:hover.glow-on-hover::before {
+    opacity: 1;
+}
+
+.features-about-btn::after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background: transparent;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+/* product-details */
+.product-data-btn-sub-1 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    margin: 0;
+    color: #3734a9;
+    border: 1px solid #3734a9;
+    border-radius: 10px;
+    background-color: transparent;
+    position: relative;
+    display: inline-block;
+    padding: 10px 30px;
+    z-index: 1;
+    overflow: hidden;
+    transition: color 1s, box-shadow 1s;
+}
+.product-data-btn-sub-1:hover {
+    color: #fff;
+}
+
+.product-data-btn-sub-1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #3734a9;
+    transform: skewX(35deg);
+    z-index: -1;
+    transition: width 1s;
+    border-radius: 10px; /* Matching the button's border-radius */
+}
+
+.product-data-btn-sub-1:hover::before {
+    width: 100%;
+}
+
+.product-data-btn-sub-1:hover::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #3734a9;
+    box-shadow: 0 0 20px #3734a9,
+                0 0 40px #3734a9,
+                0 0 80px #3734a9,
+                0 0 160px #3734a9;
+    border-radius: 10px;
+    z-index: -2;
+    transition: box-shadow 1s;
+}
+
+/* Adding glow effect */
+.product-data-btn-sub-1.glow-on-hover::before {
+    content: '';
+    background: linear-gradient(45deg, #7220dd, #3734a9, #3e38e0, #322dc9, #9538ff, #3737c4, #9e48ff, #4040b6);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.product-data-btn-sub-1:active {
+    color: #000;
+}
+
+.product-data-btn-sub-1:active:after {
+    background: transparent;
+}
+
+.product-data-btn-sub-1:hover.glow-on-hover::before {
+    opacity: 1;
+}
+
+.product-data-btn-sub-1::after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background: transparent;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+/* product-details */
